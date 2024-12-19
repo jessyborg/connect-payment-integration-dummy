@@ -122,13 +122,52 @@ export class MockPaymentService extends AbstractPaymentService {
       dropins: [],
       components: [
         {
-          type: PaymentMethodType.CARD,
+          type: 'card', // scheme
         },
         {
-          type: PaymentMethodType.INVOICE,
+          type: 'BTRF',
         },
         {
-          type: PaymentMethodType.PURCHASE_ORDER,
+          type: 'V12',
+        },
+        {
+          type: 'ideal',
+        },
+        {
+          type: 'paypal',
+        },
+        {
+          type: 'applepay',
+        },
+        {
+          type: 'googlepay',
+        },
+        {
+          type: 'klarna_pay_now', // klarna_paynow
+        },
+        {
+          type: 'klarna_pay_later', // klarna
+        },
+        {
+          type: 'klarna_pay_overtime', // klarna_account
+        },
+        {
+          type: 'eps',
+        },
+        {
+          type: 'bancontactcard',
+        },
+        {
+          type: 'bancontactmobile',
+        },
+        {
+          type: 'twint',
+        },
+        {
+          type: 'sepadirectdebit',
+        },
+        {
+          type: 'klarna_billie', // klarna_b2b
         },
       ],
     };
